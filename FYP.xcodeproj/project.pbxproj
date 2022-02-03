@@ -7,22 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7232DFF79991F250EE49B80D /* Pods_FYP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC5057FAFF0DFA5DB72909D /* Pods_FYP.framework */; };
 		CEEBB2B227A18EA200696424 /* FYPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2B127A18EA200696424 /* FYPApp.swift */; };
 		CEEBB2B427A18EA200696424 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2B327A18EA200696424 /* ContentView.swift */; };
 		CEEBB2B627A18EA300696424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEBB2B527A18EA300696424 /* Assets.xcassets */; };
 		CEEBB2B927A18EA300696424 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEBB2B827A18EA300696424 /* Preview Assets.xcassets */; };
+		CEEBB2C227A2E35500696424 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2C127A2E35500696424 /* Mnemonic.swift */; };
+		CEEBB2C427A2E82600696424 /* MnemonicWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2C327A2E82600696424 /* MnemonicWordsList.swift */; };
+		CEEBB2C627A3CEE000696424 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2C527A3CEE000696424 /* Extensions.swift */; };
+		CEEBB2DB27A6B88300696424 /* MnemonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBB2DA27A6B88300696424 /* MnemonicTests.swift */; };
+		CEEBB2E027A6BEBD00696424 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = CEEBB2DF27A6BEBD00696424 /* vectors.json */; };
+		CEEBB2E127A6BEBD00696424 /* vectors.json in Resources */ = {isa = PBXBuildFile; fileRef = CEEBB2DF27A6BEBD00696424 /* vectors.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEEBB2D427A6B85D00696424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEBB2A627A18EA200696424 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEBB2AD27A18EA200696424;
+			remoteInfo = FYP;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		9FC5057FAFF0DFA5DB72909D /* Pods_FYP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FYP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBB2AE27A18EA200696424 /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBB2B127A18EA200696424 /* FYPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPApp.swift; sourceTree = "<group>"; };
 		CEEBB2B327A18EA200696424 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEEBB2B527A18EA300696424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEBB2B827A18EA300696424 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEEBB2C127A2E35500696424 /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		CEEBB2C327A2E82600696424 /* MnemonicWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicWordsList.swift; sourceTree = "<group>"; };
+		CEEBB2C527A3CEE000696424 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEEBB2D027A6B85D00696424 /* FYPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEBB2DA27A6B88300696424 /* MnemonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicTests.swift; sourceTree = "<group>"; };
+		CEEBB2DF27A6BEBD00696424 /* vectors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vectors.json; sourceTree = "<group>"; };
+		E601697D0EDC6A53F5ADC353 /* Pods-FYP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYP.release.xcconfig"; path = "Target Support Files/Pods-FYP/Pods-FYP.release.xcconfig"; sourceTree = "<group>"; };
+		E91D3333F591793E2529903D /* Pods-FYP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYP.debug.xcconfig"; path = "Target Support Files/Pods-FYP/Pods-FYP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEEBB2AB27A18EA200696424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7232DFF79991F250EE49B80D /* Pods_FYP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEBB2CD27A6B85D00696424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,11 +66,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9B261B8335267804FBFB7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91D3333F591793E2529903D /* Pods-FYP.debug.xcconfig */,
+				E601697D0EDC6A53F5ADC353 /* Pods-FYP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E84990C05E2A4F6BCCE2D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FC5057FAFF0DFA5DB72909D /* Pods_FYP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEEBB2A527A18EA200696424 = {
 			isa = PBXGroup;
 			children = (
 				CEEBB2B027A18EA200696424 /* FYP */,
+				CEEBB2D127A6B85D00696424 /* FYPTests */,
 				CEEBB2AF27A18EA200696424 /* Products */,
+				4B9B261B8335267804FBFB7C /* Pods */,
+				7E84990C05E2A4F6BCCE2D81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEBB2AE27A18EA200696424 /* FYP.app */,
+				CEEBB2D027A6B85D00696424 /* FYPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +106,8 @@
 		CEEBB2B027A18EA200696424 /* FYP */ = {
 			isa = PBXGroup;
 			children = (
+				CEEBB2C027A2E33E00696424 /* Core */,
+				CEEBB2BF27A2E32500696424 /* Models */,
 				CEEBB2B127A18EA200696424 /* FYPApp.swift */,
 				CEEBB2B327A18EA200696424 /* ContentView.swift */,
 				CEEBB2B527A18EA300696424 /* Assets.xcassets */,
@@ -67,6 +124,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CEEBB2BF27A2E32500696424 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEEBB2C027A2E33E00696424 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBB2C127A2E35500696424 /* Mnemonic.swift */,
+				CEEBB2C327A2E82600696424 /* MnemonicWordsList.swift */,
+				CEEBB2C527A3CEE000696424 /* Extensions.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEEBB2D127A6B85D00696424 /* FYPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBB2DF27A6BEBD00696424 /* vectors.json */,
+				CEEBB2DA27A6B88300696424 /* MnemonicTests.swift */,
+			);
+			path = FYPTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEEBB2BC27A18EA300696424 /* Build configuration list for PBXNativeTarget "FYP" */;
 			buildPhases = (
+				E6D3EB049563482B81E931D3 /* [CP] Check Pods Manifest.lock */,
 				CEEBB2AA27A18EA200696424 /* Sources */,
 				CEEBB2AB27A18EA200696424 /* Frameworks */,
 				CEEBB2AC27A18EA200696424 /* Resources */,
+				955358E50BA3E6D9A923DA6B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +171,24 @@
 			productName = FYP;
 			productReference = CEEBB2AE27A18EA200696424 /* FYP.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEEBB2CF27A6B85D00696424 /* FYPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEBB2D627A6B85D00696424 /* Build configuration list for PBXNativeTarget "FYPTests" */;
+			buildPhases = (
+				CEEBB2CC27A6B85D00696424 /* Sources */,
+				CEEBB2CD27A6B85D00696424 /* Frameworks */,
+				CEEBB2CE27A6B85D00696424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEBB2D527A6B85D00696424 /* PBXTargetDependency */,
+			);
+			name = FYPTests;
+			productName = FYPTests;
+			productReference = CEEBB2D027A6B85D00696424 /* FYPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +202,10 @@
 				TargetAttributes = {
 					CEEBB2AD27A18EA200696424 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					CEEBB2CF27A6B85D00696424 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CEEBB2AD27A18EA200696424;
 					};
 				};
 			};
@@ -116,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				CEEBB2AD27A18EA200696424 /* FYP */,
+				CEEBB2CF27A6B85D00696424 /* FYPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,24 +233,94 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEBB2E027A6BEBD00696424 /* vectors.json in Resources */,
 				CEEBB2B927A18EA300696424 /* Preview Assets.xcassets in Resources */,
 				CEEBB2B627A18EA300696424 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEEBB2CE27A6B85D00696424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEBB2E127A6BEBD00696424 /* vectors.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		955358E50BA3E6D9A923DA6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FYP/Pods-FYP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FYP/Pods-FYP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FYP/Pods-FYP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D3EB049563482B81E931D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FYP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEEBB2AA27A18EA200696424 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEBB2C627A3CEE000696424 /* Extensions.swift in Sources */,
+				CEEBB2C227A2E35500696424 /* Mnemonic.swift in Sources */,
 				CEEBB2B427A18EA200696424 /* ContentView.swift in Sources */,
 				CEEBB2B227A18EA200696424 /* FYPApp.swift in Sources */,
+				CEEBB2C427A2E82600696424 /* MnemonicWordsList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEBB2CC27A6B85D00696424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEBB2DB27A6B88300696424 /* MnemonicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEBB2D527A6B85D00696424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEBB2AD27A18EA200696424 /* FYP */;
+			targetProxy = CEEBB2D427A6B85D00696424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CEEBB2BA27A18EA300696424 /* Debug */ = {
@@ -263,6 +441,7 @@
 		};
 		CEEBB2BD27A18EA300696424 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91D3333F591793E2529903D /* Pods-FYP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +456,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,12 +466,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CEEBB2BE27A18EA300696424 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E601697D0EDC6A53F5ADC353 /* Pods-FYP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +497,43 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CEEBB2D727A6B85D00696424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMK972CQ4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzakirov2.FYPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYP.app/FYP";
+			};
+			name = Debug;
+		};
+		CEEBB2D827A6B85D00696424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMK972CQ4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nzakirov2.FYPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYP.app/FYP";
 			};
 			name = Release;
 		};
@@ -336,6 +554,15 @@
 			buildConfigurations = (
 				CEEBB2BD27A18EA300696424 /* Debug */,
 				CEEBB2BE27A18EA300696424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEBB2D627A6B85D00696424 /* Build configuration list for PBXNativeTarget "FYPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEBB2D727A6B85D00696424 /* Debug */,
+				CEEBB2D827A6B85D00696424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
