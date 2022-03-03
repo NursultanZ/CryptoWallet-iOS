@@ -1,4 +1,5 @@
 import Foundation
+import BigInt
 
 extension String {
 
@@ -56,5 +57,30 @@ extension Data {
     func binaryEncodedString(length l: Int) -> String {
         return map { String($0, radix: 2).normalize(length: l) }.joined()
     }
+    
+    func uint32() -> UInt32 {
+        return withUnsafeBytes { $0.load(as: UInt32.self) }
+    }
 }
+
+extension UInt32 {
+    var data: Data {
+        var int = self
+        return Data(bytes: &int, count: MemoryLayout<UInt32>.size)
+    }
+}
+
+extension UInt8 {
+    var data: Data {
+        var int = self
+        return Data(bytes: &int, count: MemoryLayout<UInt8>.size)
+    }
+}
+
+//extension BigUInt {
+//    var data: Data {
+//        var int = self
+//        return Data(bytes: &int, count: MemoryLayout<BigUInt>.size)
+//    }
+//}
 

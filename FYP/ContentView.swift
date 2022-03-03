@@ -16,8 +16,14 @@ struct ContentView: View {
                 do{
                     let mnemonic = try Mnemonic.generateWords()
                     try Mnemonic.validatePhrase(words: mnemonic)
-                    words = try Mnemonic.seed(mnemonic: mnemonic)
+                    let seed = try Mnemonic.seed(mnemonic: mnemonic)
                     print(mnemonic)
+                    print(seed.hexEncodedString())
+                    let privKey = HDPrivateKey(seed: seed, xPrv: 0x0488ade4, xPub: 0x0488b21e)
+                    print(privKey.serialized())
+                    let newPrivKey = privKey.derive(at: UInt32(44), hardened: true).derive(at: UInt32(0), hardened: true).derive(at: UInt32(0), hardened: true)
+                    print(newPrivKey.serialized())
+                    print(newPrivKey.getPublicKey().serialized())
                     
                 }catch {
                     print(error)
