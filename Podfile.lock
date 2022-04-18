@@ -3,13 +3,14 @@ PODS:
     - BigInt (~> 5.0.0)
   - BigInt (5.0.0)
   - CryptoSwift (1.0.0)
+  - Introspect (0.1.4)
   - ripemd160 (1.1.0)
   - secp256k1.swift (0.1.4)
 
 DEPENDENCIES:
   - Base58Swift
-  - BigInt
   - CryptoSwift (~> 1.0.0)
+  - Introspect
   - ripemd160
   - secp256k1.swift
 
@@ -18,6 +19,7 @@ SPEC REPOS:
     - Base58Swift
     - BigInt
     - CryptoSwift
+    - Introspect
     - ripemd160
     - secp256k1.swift
 
@@ -25,9 +27,10 @@ SPEC CHECKSUMS:
   Base58Swift: 53d551f0b33d9478fa63b3445e453a772d6b31a7
   BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
   CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
+  Introspect: b62c4dd2063072327c21d618ef2bedc3c87bc366
   ripemd160: ff7bd0dec980cac0b865af599c76ebb626c4bdc8
   secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
 
-PODFILE CHECKSUM: f5edf8b001773a31e9b0de3f3d927a19c818234d
+PODFILE CHECKSUM: f3c23343fea6cec9f9b6f6670a13fafba7d3db8c
 
 COCOAPODS: 1.11.3

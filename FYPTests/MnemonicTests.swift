@@ -40,6 +40,8 @@ class MnemonicTests: XCTestCase {
                     let selfSeed = try Mnemonic.seed(mnemonic: words, passphrase: "TREZOR").hexEncodedString()
                     let seed = test[2]
                     XCTAssertTrue(selfSeed == seed, "seed")
+                    
+                    
                 }
             }
         } catch {

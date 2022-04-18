@@ -10,7 +10,7 @@ target 'FYP' do
   pod 'Base58Swift'
   pod 'secp256k1.swift'
   pod 'ripemd160'
-  pod 'BigInt'
+  pod 'Introspect'
 
 end
 
