@@ -11,6 +11,7 @@ target 'FYP' do
   pod 'secp256k1.swift'
   pod 'ripemd160'
   pod 'Introspect'
+  pod 'KeychainAccess'
 
 end
 

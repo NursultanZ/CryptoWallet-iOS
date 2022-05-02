@@ -22,6 +22,15 @@ struct Mnemonic {
         case invalidWordsCount
         case invalidMnemonicWord
         case invalidChecksum
+        
+        var desc: String {
+            switch self {
+            case .invalidWordsCount: return "Mnemonic phrase should contain from 12 to 24 words."
+            case .invalidMnemonicWord: return "Mnemonic phrase you entered contains one or more invalid words."
+            case .invalidChecksum: return "The combination of words you entered can not produce valid wallet seed."
+            case .secureRandomBytesError: return ""
+            }
+        }
     }
     
     enum SeedError: Error {

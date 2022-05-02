@@ -43,6 +43,9 @@ class MarketViewModel: ObservableObject {
     
     func changeOrder(_ order: ListOrder){
         listOrder = order
+        let query: [String: AnyObject] = [
+            kSecClass as String: kSecClassGenericPassword,
+        ]
     }
     
     func getOrderedCoins(_ order: ListOrder?) -> [Coin]{

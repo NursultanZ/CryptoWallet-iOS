@@ -21,6 +21,8 @@ struct DeveloperPreview {
     
     var marketVM = MarketViewModel()
     
+    var appVM = AppViewModel()
+    
     let stat1 = Statistic(title: "Market Cap", value: "3.05Bn", percentChange: 12.4)
     let stat2 = Statistic(title: "BTC Dominance", value: "39.7%")
     let stat3 = Statistic(title: "Trading Volume", value: "77.2Mn", percentChange: -4.8)

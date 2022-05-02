@@ -17,6 +17,12 @@
 		C230168427F1D4420081F7B4 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230168327F1D4420081F7B4 /* MarketViewModel.swift */; };
 		C230168727F314DB0081F7B4 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230168627F314DB0081F7B4 /* CoinDataService.swift */; };
 		C230168927F324170081F7B4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230168827F324170081F7B4 /* NetworkService.swift */; };
+		C23E4ED0281EBACD00927D17 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ECF281EBACD00927D17 /* WalletView.swift */; };
+		C23E4ED2281FE93100927D17 /* CreateKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ED1281FE93100927D17 /* CreateKeyView.swift */; };
+		C23E4ED4281FFDE900927D17 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ED3281FFDE900927D17 /* SecureStorage.swift */; };
+		C23E4ED62820122B00927D17 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ED52820122B00927D17 /* SettingsView.swift */; };
+		C23E4ED8282016BF00927D17 /* ManageWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ED7282016BF00927D17 /* ManageWalletView.swift */; };
+		C2952AE1281EA7F2006A088B /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2952AE0281EA7F1006A088B /* TextEditorView.swift */; };
 		C2B17A7327FDC14D00CBAD7D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A7227FDC14D00CBAD7D /* UIApplication.swift */; };
 		C2B17A7527FDC29800CBAD7D /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A7427FDC29800CBAD7D /* Statistic.swift */; };
 		C2B17A7727FDC44200CBAD7D /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A7627FDC44200CBAD7D /* StatisticView.swift */; };
@@ -25,6 +31,9 @@
 		C2B17A7D2801DE2900CBAD7D /* CoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A7C2801DE2900CBAD7D /* CoinsView.swift */; };
 		C2B17A7F2802D83D00CBAD7D /* CoinsListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A7E2802D83D00CBAD7D /* CoinsListHeaderView.swift */; };
 		C2B17A81280568CF00CBAD7D /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B17A80280568CF00CBAD7D /* CoinDetailView.swift */; };
+		C2B28069280EDDD4006CD66A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B28068280EDDD4006CD66A /* AppView.swift */; };
+		C2B2806B280EEA0A006CD66A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2806A280EEA0A006CD66A /* AppViewModel.swift */; };
+		C2B2806D2816A8E6006CD66A /* RestoreKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2806C2816A8E6006CD66A /* RestoreKeyView.swift */; };
 		C2C96F4527FB15000028ED5D /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C96F4427FB15000028ED5D /* CoinImageView.swift */; };
 		C2C96F4727FB163C0028ED5D /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C96F4627FB163C0028ED5D /* CoinImageService.swift */; };
 		C2C96F4927FB17A50028ED5D /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C96F4827FB17A50028ED5D /* CoinImageViewModel.swift */; };
@@ -76,6 +85,12 @@
 		C230168327F1D4420081F7B4 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
 		C230168627F314DB0081F7B4 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		C230168827F324170081F7B4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C23E4ECF281EBACD00927D17 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		C23E4ED1281FE93100927D17 /* CreateKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateKeyView.swift; sourceTree = "<group>"; };
+		C23E4ED3281FFDE900927D17 /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
+		C23E4ED52820122B00927D17 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C23E4ED7282016BF00927D17 /* ManageWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageWalletView.swift; sourceTree = "<group>"; };
+		C2952AE0281EA7F1006A088B /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		C2B17A7227FDC14D00CBAD7D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		C2B17A7427FDC29800CBAD7D /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Statistic.swift; path = FYP/Extensions/Statistic.swift; sourceTree = SOURCE_ROOT; };
 		C2B17A7627FDC44200CBAD7D /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
@@ -84,6 +99,10 @@
 		C2B17A7C2801DE2900CBAD7D /* CoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsView.swift; sourceTree = "<group>"; };
 		C2B17A7E2802D83D00CBAD7D /* CoinsListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListHeaderView.swift; sourceTree = "<group>"; };
 		C2B17A80280568CF00CBAD7D /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
+		C2B28068280EDDD4006CD66A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		C2B2806A280EEA0A006CD66A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		C2B2806C2816A8E6006CD66A /* RestoreKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreKeyView.swift; sourceTree = "<group>"; };
+		C2B77884280ED52D00AFE333 /* FYP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FYP.entitlements; sourceTree = "<group>"; };
 		C2C96F4427FB15000028ED5D /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		C2C96F4627FB163C0028ED5D /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		C2C96F4827FB17A50028ED5D /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
@@ -173,6 +192,12 @@
 				C21AD22327EDE2D800B753AC /* CoinRowView.swift */,
 				C2B17A7C2801DE2900CBAD7D /* CoinsView.swift */,
 				C2B17A80280568CF00CBAD7D /* CoinDetailView.swift */,
+				C2B28068280EDDD4006CD66A /* AppView.swift */,
+				C2B2806C2816A8E6006CD66A /* RestoreKeyView.swift */,
+				C23E4ECF281EBACD00927D17 /* WalletView.swift */,
+				C23E4ED1281FE93100927D17 /* CreateKeyView.swift */,
+				C23E4ED52820122B00927D17 /* SettingsView.swift */,
+				C23E4ED7282016BF00927D17 /* ManageWalletView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +207,7 @@
 			children = (
 				C230168327F1D4420081F7B4 /* MarketViewModel.swift */,
 				C2CC66E12805BB86004A89C7 /* CoinDetailViewModel.swift */,
+				C2B2806A280EEA0A006CD66A /* AppViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -206,6 +232,7 @@
 				C2B17A7627FDC44200CBAD7D /* StatisticView.swift */,
 				C2B17A7E2802D83D00CBAD7D /* CoinsListHeaderView.swift */,
 				C2CC66E52806E1F8004A89C7 /* ChartView.swift */,
+				C2952AE0281EA7F1006A088B /* TextEditorView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -251,10 +278,10 @@
 		CEEBB2A527A18EA200696424 = {
 			isa = PBXGroup;
 			children = (
+				4B9B261B8335267804FBFB7C /* Pods */,
 				CEEBB2B027A18EA200696424 /* FYP */,
 				CEEBB2D127A6B85D00696424 /* FYPTests */,
 				CEEBB2AF27A18EA200696424 /* Products */,
-				4B9B261B8335267804FBFB7C /* Pods */,
 				7E84990C05E2A4F6BCCE2D81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -271,6 +298,7 @@
 		CEEBB2B027A18EA200696424 /* FYP */ = {
 			isa = PBXGroup;
 			children = (
+				C2B77884280ED52D00AFE333 /* FYP.entitlements */,
 				C2C96F4A27FC52A00028ED5D /* Utilities */,
 				C2C96F4227FB14E00028ED5D /* Components */,
 				C230168527F314B50081F7B4 /* Services */,
@@ -313,6 +341,7 @@
 				C2D93FC627EC84CE00F7BD2C /* HDWallet */,
 				CEEBB2C527A3CEE000696424 /* Extensions.swift */,
 				CE7F2EB327C675C200A026BD /* Crypto.swift */,
+				C23E4ED3281FFDE900927D17 /* SecureStorage.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -482,7 +511,9 @@
 				C21AD22827EDE9FA00B753AC /* Double.swift in Sources */,
 				C2B17A81280568CF00CBAD7D /* CoinDetailView.swift in Sources */,
 				CE7F2EB427C675C200A026BD /* Crypto.swift in Sources */,
+				C23E4ED4281FFDE900927D17 /* SecureStorage.swift in Sources */,
 				C230168427F1D4420081F7B4 /* MarketViewModel.swift in Sources */,
+				C23E4ED2281FE93100927D17 /* CreateKeyView.swift in Sources */,
 				CEEBB2C627A3CEE000696424 /* Extensions.swift in Sources */,
 				C2B17A7B2801930400CBAD7D /* MarketDataService.swift in Sources */,
 				C230168727F314DB0081F7B4 /* CoinDataService.swift in Sources */,
@@ -494,6 +525,7 @@
 				C2B17A7527FDC29800CBAD7D /* Statistic.swift in Sources */,
 				CEEBB2C227A2E35500696424 /* Mnemonic.swift in Sources */,
 				CE95080C27CF8C9A00926835 /* BInt.swift in Sources */,
+				C2952AE1281EA7F2006A088B /* TextEditorView.swift in Sources */,
 				C21AD21B27EDD36800B753AC /* Color.swift in Sources */,
 				C21AD22227EDDD1800B753AC /* Coin.swift in Sources */,
 				C2B17A7F2802D83D00CBAD7D /* CoinsListHeaderView.swift in Sources */,
@@ -502,10 +534,14 @@
 				CEEBB2B427A18EA200696424 /* ContentView.swift in Sources */,
 				C2CC66E62806E1F8004A89C7 /* ChartView.swift in Sources */,
 				C21AD22027EDD54500B753AC /* MarketView.swift in Sources */,
+				C23E4ED62820122B00927D17 /* SettingsView.swift in Sources */,
 				C2D93FC827EC850F00F7BD2C /* HDKeychain.swift in Sources */,
 				CE7F2EB027C66C9400A026BD /* HDPrivateKey.swift in Sources */,
 				C2C96F4727FB163C0028ED5D /* CoinImageService.swift in Sources */,
+				C2B2806D2816A8E6006CD66A /* RestoreKeyView.swift in Sources */,
 				C2CC66EA2806F880004A89C7 /* String.swift in Sources */,
+				C2B2806B280EEA0A006CD66A /* AppViewModel.swift in Sources */,
+				C2B28069280EDDD4006CD66A /* AppView.swift in Sources */,
 				C2B17A7727FDC44200CBAD7D /* StatisticView.swift in Sources */,
 				CEEBB2B227A18EA200696424 /* FYPApp.swift in Sources */,
 				C21AD22427EDE2D800B753AC /* CoinRowView.swift in Sources */,
@@ -516,6 +552,8 @@
 				CE7F2EB227C66CA200A026BD /* HDPublicKey.swift in Sources */,
 				C2CC66E82806E7B8004A89C7 /* Date.swift in Sources */,
 				C2CC66E22805BB86004A89C7 /* CoinDetailViewModel.swift in Sources */,
+				C23E4ED0281EBACD00927D17 /* WalletView.swift in Sources */,
+				C23E4ED8282016BF00927D17 /* ManageWalletView.swift in Sources */,
 				C2C96F4C27FC52AE0028ED5D /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,12 +699,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FYP/FYP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FYP/Preview Content\"";
 				DEVELOPMENT_TEAM = KMK972CQ4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To access your wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -693,12 +733,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FYP/FYP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FYP/Preview Content\"";
 				DEVELOPMENT_TEAM = KMK972CQ4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To access your wallet";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

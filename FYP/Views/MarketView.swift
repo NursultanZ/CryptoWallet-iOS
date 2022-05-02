@@ -59,7 +59,7 @@ struct MarketView_Previews: PreviewProvider {
     static var previews: some View {
         MarketView()
             .environmentObject(dev.marketVM)
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
 
