@@ -1,10 +1,3 @@
-//
-//  ManageWalletView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 2/5/2022.
-//
-
 import SwiftUI
 
 struct ManageWalletView: View {
@@ -12,6 +5,10 @@ struct ManageWalletView: View {
     @EnvironmentObject private var appVM: AppViewModel
     
     @State var showRestore: Bool = false
+    @State var showCreate: Bool = false
+    
+    @State var showUnlink: Bool = false
+    @State var showBackup: Bool = false
     
     var body: some View {
         
@@ -21,13 +18,25 @@ struct ManageWalletView: View {
             
             VStack {
                 List {
-                    Section("Current Wallet") {
-                        ManageWalletListItem(imageName: "key.icloud", text: "Backup Phrase", color: Color.custom.yellow)
-                        ManageWalletListItem(imageName: "trash", text: "Unlink Phrase", color: Color.custom.red)
+                    
+                    if (appVM.isKeySaved){
+                        Section("Current Wallet") {
+                            ManageWalletListItem(imageName: "key.icloud", text: "Backup Phrase", color: Color.custom.yellow)
+                                .onTapGesture {
+                                    showBackup = true
+                                }
+                            ManageWalletListItem(imageName: "trash", text: "Unlink Phrase", color: Color.custom.red)
+                                .onTapGesture {
+                                    showUnlink = true
+                                }
+                        }
                     }
                     
                     Section (footer: warningDesc){
                         ManageWalletListItem(imageName: "plus", text: "Create", color: Color.custom.yellow)
+                            .onTapGesture {
+                                showCreate = true
+                            }
                         ManageWalletListItem(imageName: "square.and.arrow.down", text: "Restore", color: Color.custom.yellow)
                             .onTapGesture {
                                 showRestore = true
@@ -38,9 +47,21 @@ struct ManageWalletView: View {
             }
             .navigationTitle("Manage Wallet")
         }
+        .sheet(isPresented: $showBackup, content: {
+            BackupView(words: appVM.keychain.getMnemonic()!, salt: appVM.keychain.getString(key: "salt"))
+        })
         .sheet(isPresented: $showRestore) {
             RestoreKeyView()
                 .environmentObject(appVM)
+        }
+        .sheet(isPresented: $showCreate) {
+            CreateKeyView()
+                .environmentObject(appVM)
+        }
+        .alert(isPresented: $showUnlink) {
+            Alert(title: Text("Unlink Wallet"), message: Text("Do you want to unlink your wallet phrase from this application?"), primaryButton: .destructive(Text("Unlink")){
+                appVM.clear()
+            }, secondaryButton: .cancel())
         }
         
     }

@@ -1,10 +1,3 @@
-//
-//  RestoreKeyView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/4/2022.
-//
-
 import SwiftUI
 
 struct RestoreKeyView: View {
@@ -68,10 +61,12 @@ struct RestoreKeyView: View {
                                 checkMnemonic()
                                 
                                 if(!isError) {
-                                    
-                                    appVM.keychain.saveMnemonic(words: getWords())
-                                    appVM.isKeySaved = true
-                                    
+                                
+                                    if(showSalt && salt.trimmingCharacters(in: .whitespacesAndNewlines) != "") {
+                                        appVM.updateKey(words: getWords(), salt: salt.trimmingCharacters(in: .whitespacesAndNewlines))
+                                    }else {
+                                        appVM.updateKey(words: getWords(), salt: nil)
+                                    }
                                     dismiss()
                                 }
                             }
@@ -133,6 +128,8 @@ extension RestoreKeyView {
                 .foregroundColor(Color.custom.secondaryText))
             .foregroundColor(Color.custom.mainText)
             .accentColor(Color.custom.yellow)
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
     }
     
     var toggleSalt: some View {

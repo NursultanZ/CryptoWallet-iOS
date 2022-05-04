@@ -1,10 +1,3 @@
-//
-//  CoinImageViewModel.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 4/4/2022.
-//
-
 import Foundation
 import SwiftUI
 import Combine

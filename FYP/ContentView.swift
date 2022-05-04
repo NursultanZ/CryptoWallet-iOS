@@ -1,15 +1,6 @@
-//
-//  ContentView.swift
-//  FYP
-//
-//  Created by user on 26/1/2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject private var appVM = AppViewModel()
 
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color.custom.secondaryBackground)
@@ -18,8 +9,18 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             Color.custom.secondaryBackground.edgesIgnoringSafeArea(.all)
-            AppView()
-                .environmentObject(appVM)
+            if Reachability.isConnectedToNetwork() {
+                AppView()
+            }else {
+                VStack {
+                    Image(systemName: "wifi.exclamationmark")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    .foregroundColor(Color.secondary)
+                    Text("No Internet Connection")
+                        .foregroundColor(Color.secondary)
+                }
+            }
         }
     }
 }

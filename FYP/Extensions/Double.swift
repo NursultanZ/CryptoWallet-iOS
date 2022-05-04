@@ -1,10 +1,3 @@
-//
-//  Double.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/3/2022.
-//
-
 import Foundation
 
 extension Double {
@@ -12,6 +5,7 @@ extension Double {
     private var currencyFormatter2: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
+        formatter.locale = Locale(identifier: "en_US")
         formatter.numberStyle = .currency
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
@@ -27,6 +21,7 @@ extension Double {
     private var currencyFormatter6: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
+        formatter.locale = Locale(identifier: "en_US")
         formatter.numberStyle = .currency
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 6
@@ -41,6 +36,13 @@ extension Double {
     
     func asFormattedString() -> String {
         return String(format: "%.2f", self)
+    }
+    
+    func asFormattedString4() -> String {
+        return String(format: "%.4f", self)
+    }
+    func asFormattedString10() -> String {
+        return String(format: "%.10f", self)
     }
     
     func asPercentString() -> String {

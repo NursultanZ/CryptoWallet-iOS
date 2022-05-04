@@ -1,10 +1,3 @@
-//
-//  Date.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 13/4/2022.
-//
-
 import Foundation
 
 extension Date {

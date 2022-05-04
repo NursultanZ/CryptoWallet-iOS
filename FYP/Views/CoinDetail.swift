@@ -1,10 +1,3 @@
-//
-//  CoinDetail.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 12/4/2022.
-//
-
 import Foundation
 
 //https://api.coingecko.com/api/v3/coins/ethereum?localization=false&tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false

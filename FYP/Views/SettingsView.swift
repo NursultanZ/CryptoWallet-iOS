@@ -1,13 +1,9 @@
-//
-//  SettingsView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 2/5/2022.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @EnvironmentObject var appVM: AppViewModel
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -15,10 +11,11 @@ struct SettingsView: View {
                 VStack {
                     List {
                         Section {
-                            NavigationLink(destination: ManageWalletView()) {
+                            NavigationLink(destination: ManageWalletView().environmentObject(appVM)) {
                                 SettingsListItem(imageName: "wallet.pass", text: "Manage Wallet")
                             }
                         }
+                        .listRowBackground(Color.custom.background)
                     }
                     .padding(.top, 1)
                     .listStyle(.insetGrouped)
@@ -52,5 +49,7 @@ struct SettingsListItem: View{
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(dev.appVM)
+            .preferredColorScheme(.dark)
     }
 }

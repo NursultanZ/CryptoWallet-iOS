@@ -1,10 +1,3 @@
-//
-//  UIApplication.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 6/4/2022.
-//
-
 import Foundation
 import SwiftUI
 

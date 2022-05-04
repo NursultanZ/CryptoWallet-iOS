@@ -3,9 +3,11 @@ import SwiftUI
 struct WalletView: View {
     
     @EnvironmentObject var appVM: AppViewModel
+    @EnvironmentObject var marketVM: MarketViewModel
     
     @State var showCreateKey: Bool = false
     @State var showRestoreKey: Bool = false
+    @State var isPressed: Bool = false
     
     var body: some View {
         NavigationView {
@@ -13,8 +15,24 @@ struct WalletView: View {
                 Color.custom.secondaryBackground.ignoresSafeArea(.all)
                 VStack {
                     if(appVM.isKeySaved){
-                        var words = appVM.keychain.getMnemonic()
-                        Text(words?.joined(separator: " ") ?? "Empty")
+                        
+                        if(appVM.isLoading || appVM.ethManager == nil){
+                            ProgressView()
+                        }else {
+                            List {
+                                
+                                Section {
+
+                                    WalletCoinView(address: appVM.ethManager!.getAddress())
+                                        .environmentObject(appVM)
+                                        .environmentObject(WalletCoinViewModel(coin: marketVM.getCoin(symbol: "ETH"), symbol: "ETH", holding: Double(appVM.balance ?? "0.0") ?? 0.0))
+                                    
+                                }
+                                
+                            }
+                            .listStyle(.insetGrouped)
+                        }
+                        
                     }else {
                         Spacer()
                         Spacer()
@@ -58,6 +76,10 @@ struct WalletView: View {
                         
                     }
                 }
+                .refreshable {
+                    appVM.updateBalance()
+                    marketVM.reloadData()
+                }
                 .navigationTitle("Wallet")
             }
         }
@@ -74,5 +96,6 @@ struct WalletView_Previews: PreviewProvider {
     static var previews: some View {
         WalletView()
             .environmentObject(dev.appVM)
+            .environmentObject(dev.marketVM)
     }
 }

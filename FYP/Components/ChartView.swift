@@ -1,10 +1,3 @@
-//
-//  ChartView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 13/4/2022.
-//
-
 import SwiftUI
 
 struct ChartView: View {

@@ -1,4 +1,5 @@
 import Foundation
+import BigInt
 
 struct HDPrivateKey {
     let depth: UInt8

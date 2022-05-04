@@ -1,10 +1,3 @@
-//
-//  CoinsView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 9/4/2022.
-//
-
 import SwiftUI
 
 struct CoinsView: View {
@@ -16,39 +9,42 @@ struct CoinsView: View {
     @State private var selectedCoin: Coin? = nil
     
     var body: some View {
-            VStack{
-                NavigationView{
-                    VStack {
-                        List {
-                            Section(){
-                                ForEach(marketVM.getOrderedCoins(nil)){ coin in
-                                    CoinRowView(coin: coin, showHoldings: false)
-                                        .onTapGesture {
-                                            showDetails = true
-                                            selectedCoin = coin
-                                        }
-                                }
-                                    
-                            }
-                        }
-                        .listStyle(.plain)
-                        .searchable(text: $marketVM.searchText, placement: .automatic, prompt: "Search")
-                        .toolbar {
-                            ToolbarItem (placement: .destructiveAction){
-                                Image(systemName: "xmark")
-                                    .foregroundColor(Color.custom.yellow)
+        NavigationView{
+            ZStack {
+                Color.custom.secondaryBackground.ignoresSafeArea(.all)
+                VStack {
+                    List {
+                        Section(){
+                            ForEach(marketVM.getOrderedCoins(nil)){ coin in
+                                CoinRowView(coin: coin, showHoldings: false, backgroundColor: Color.custom.secondaryBackground)
                                     .onTapGesture {
-                                        dismiss()
+                                        showDetails = true
+                                        selectedCoin = coin
                                     }
                             }
+                            .listRowBackground(Color.custom.secondaryBackground)
+                                
                         }
                     }
-                    .navigationTitle("All Coins")
+                    .listStyle(.plain)
+                    .searchable(text: $marketVM.searchText, placement: .automatic, prompt: "Search")
+                    .toolbar {
+                        ToolbarItem (placement: .destructiveAction){
+                            Image(systemName: "xmark")
+                                .foregroundColor(Color.custom.yellow)
+                                .onTapGesture {
+                                    dismiss()
+                                }
+                        }
+                    }
                 }
-                .sheet(isPresented: $showDetails) {
-                    CoinDetailLoadingView(coin: $selectedCoin)
-                }
+                .navigationTitle("All Coins")
             }
+        }
+        .sheet(isPresented: $showDetails) {
+            CoinDetailLoadingView(coin: $selectedCoin)
+        }
+            
         
     }
 }

@@ -1,10 +1,3 @@
-//
-//  MarketViewModel.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 28/3/2022.
-//
-
 import Foundation
 import Combine
 import SwiftUI
@@ -43,9 +36,6 @@ class MarketViewModel: ObservableObject {
     
     func changeOrder(_ order: ListOrder){
         listOrder = order
-        let query: [String: AnyObject] = [
-            kSecClass as String: kSecClassGenericPassword,
-        ]
     }
     
     func getOrderedCoins(_ order: ListOrder?) -> [Coin]{
@@ -78,6 +68,10 @@ class MarketViewModel: ObservableObject {
     func reloadData() {
         coinDS.getCoins()
         marketDS.getData()
+    }
+    
+    func getCoin(symbol: String) -> Coin? {
+        return allCoins.first(where: {$0.symbol.lowercased() == symbol.lowercased()})
     }
     
     func addSubs(){

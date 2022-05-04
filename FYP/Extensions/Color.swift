@@ -1,10 +1,3 @@
-//
-//  Color.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/3/2022.
-//
-
 import Foundation
 import SwiftUI
 

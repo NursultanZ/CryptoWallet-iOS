@@ -1,10 +1,3 @@
-//
-//  CoinRowView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/3/2022.
-//
-
 import SwiftUI
 
 struct CoinRowView: View {

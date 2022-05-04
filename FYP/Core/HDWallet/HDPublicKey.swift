@@ -1,5 +1,4 @@
 import Foundation
-import SwiftECC
 
 struct HDPublicKey {
     let xPub: UInt32

@@ -1,10 +1,3 @@
-//
-//  CoinDetailView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 12/4/2022.
-//
-
 import SwiftUI
 
 struct CoinDetailLoadingView: View {
@@ -18,16 +11,19 @@ struct CoinDetailLoadingView: View {
     var body: some View {
         NavigationView {
             if let coin = self.coin {
-                CoinDetailView(coin: coin)
-                    .toolbar {
-                        ToolbarItem (placement: .navigationBarLeading){
-                            Image(systemName: "xmark")
-                                .foregroundColor(Color.custom.yellow)
-                                .onTapGesture {
-                                    dismiss()
-                                }
-                        }
+                ZStack {
+                    Color.custom.secondaryBackground.ignoresSafeArea(.all)
+                    CoinDetailView(coin: coin)
+                        .toolbar {
+                            ToolbarItem (placement: .navigationBarLeading){
+                                Image(systemName: "xmark")
+                                    .foregroundColor(Color.custom.yellow)
+                                    .onTapGesture {
+                                        dismiss()
+                                    }
+                            }
                     }
+                }
             }
         }
     }
@@ -48,7 +44,6 @@ struct CoinDetailView: View {
     var coin: Coin
     
     init(coin: Coin){
-        print("Downloading: \(coin.symbol)")
         self.coin = coin
         _vm = StateObject(wrappedValue: CoinDetailViewModel(coin: coin))
     }
@@ -85,7 +80,6 @@ struct CoinDetailView: View {
                                 }
 
                             }
-                            .frame(width: .infinity, alignment: .leading)
                         }
                     }
                     

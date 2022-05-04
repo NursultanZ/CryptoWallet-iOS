@@ -1,10 +1,3 @@
-//
-//  NetworkService.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 29/3/2022.
-//
-
 import Foundation
 import Combine
 

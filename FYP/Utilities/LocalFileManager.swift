@@ -1,10 +1,3 @@
-//
-//  LocalFileManager.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 5/4/2022.
-//
-
 import Foundation
 import SwiftUI
 

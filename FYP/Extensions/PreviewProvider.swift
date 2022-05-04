@@ -1,10 +1,3 @@
-//
-//  PreviewProvider.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/3/2022.
-//
-
 import Foundation
 import SwiftUI
 
@@ -21,7 +14,7 @@ struct DeveloperPreview {
     
     var marketVM = MarketViewModel()
     
-    var appVM = AppViewModel()
+    @MainActor var appVM = AppViewModel()
     
     let stat1 = Statistic(title: "Market Cap", value: "3.05Bn", percentChange: 12.4)
     let stat2 = Statistic(title: "BTC Dominance", value: "39.7%")

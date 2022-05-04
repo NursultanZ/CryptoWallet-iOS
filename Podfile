@@ -6,12 +6,11 @@ target 'FYP' do
   use_frameworks!
 
   # Pods for FYP
-  pod 'CryptoSwift', '~> 1.0.0'
-  pod 'Base58Swift'
   pod 'secp256k1.swift'
   pod 'ripemd160'
-  pod 'Introspect'
   pod 'KeychainAccess'
+  pod 'Base58Swift'
+  pod 'QRCode'
 
 end
 

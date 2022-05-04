@@ -1,10 +1,3 @@
-//
-//  SecureStorage.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 2/5/2022.
-//
-
 import Foundation
 import KeychainAccess
 
@@ -16,9 +9,27 @@ class SecureStorage {
         keychain = Keychain(service: service).accessibility(.whenPasscodeSetThisDeviceOnly)
     }
     
+    func saveString(key: String, value: String) {
+        keychain[key] = value
+    }
+    
+    func clear() throws {
+        try keychain.removeAll()
+    }
+    
+    func getString(key: String) -> String? {
+        let value = keychain[key]
+        
+        if let safeValue = value {
+            return safeValue
+        }else {
+            return nil
+        }
+    }
+    
     func checkData(key: String) -> Bool {
         let data = try? keychain.getData(key)
-        guard let safeData = data else {
+        guard data != nil else {
             return false
         }
         return true

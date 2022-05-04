@@ -1,10 +1,3 @@
-//
-//  MarketDataService.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 9/4/2022.
-//
-
 import Foundation
 import Combine
 

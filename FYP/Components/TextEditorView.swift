@@ -1,10 +1,3 @@
-//
-//  TextEditorView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 1/5/2022.
-//
-
 import SwiftUI
 
 struct TextEditorView: View {

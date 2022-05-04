@@ -1,10 +1,3 @@
-//
-//  StatisticView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 6/4/2022.
-//
-
 import SwiftUI
 
 struct StatisticView: View {

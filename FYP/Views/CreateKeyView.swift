@@ -1,20 +1,15 @@
-//
-//  CreateKeyView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 2/5/2022.
-//
-
 import SwiftUI
 
 struct CreateKeyView: View {
     
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var appVM: AppViewModel
     
     @State var showSalt: Bool = false
     @State var salt: String = ""
     @State var confirm: String = ""
     @State var numberOfWords: Int = 12
+    @State var isError: Bool = false
     
     var body: some View {
         NavigationView {
@@ -84,13 +79,32 @@ struct CreateKeyView: View {
                         Text("Create")
                             .foregroundColor(Color.custom.yellow)
                             .onTapGesture {
-                                
+                                if (showSalt) {
+                                    if (salt == confirm) {
+                                        let words = appVM.generateMnemonic(num: numberOfWords)
+
+                                        appVM.updateKey(words: words, salt: salt)
+                                    
+                                        dismiss()
+                                    }else {
+                                        isError = true
+                                    }
+                                } else {
+                                    let words = appVM.generateMnemonic(num: numberOfWords)
+                                    appVM.updateKey(words: words, salt: nil)
+                                    dismiss()
+                                }
                             }
                     }
                 })
+                .alert("Passphrases you entered do not match. Please correct them.", isPresented: $isError) {
+                    Button("OK", role: .cancel){
+                        isError = false
+                    }
+                    .foregroundColor(Color.custom.yellow)
+                }
             }
         }
-        
     }
 }
 
@@ -106,6 +120,8 @@ extension CreateKeyView {
                 .foregroundColor(Color.custom.secondaryText))
             .foregroundColor(Color.custom.mainText)
             .accentColor(Color.custom.yellow)
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
     }
     
     var ConfirmField: some View {
@@ -118,6 +134,8 @@ extension CreateKeyView {
                 .foregroundColor(Color.custom.secondaryText))
             .foregroundColor(Color.custom.mainText)
             .accentColor(Color.custom.yellow)
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
     }
     
     var ToggleSalt: some View {
@@ -139,5 +157,6 @@ extension CreateKeyView {
 struct CreateKeyView_Previews: PreviewProvider {
     static var previews: some View {
         CreateKeyView()
+            .environmentObject(dev.appVM)
     }
 }

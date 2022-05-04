@@ -1,12 +1,4 @@
-//
-//  MarketView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 25/3/2022.
-//
-
 import SwiftUI
-import Introspect
 
 struct MarketView: View {
     
@@ -21,27 +13,29 @@ struct MarketView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color.custom.secondaryBackground.ignoresSafeArea()
-            NavigationView{
+        NavigationView {
+            ZStack{
+                Color.custom.secondaryBackground.ignoresSafeArea()
                 VStack{
-                    
-                    HorizontalStatistics()
-                        .environmentObject(marketVM)
-                    
-                    List{
+                    if(marketVM.allCoins.count == 0 || marketVM.statistics.count == 0){
+                        ProgressView()
+                    }else{
+                        HorizontalStatistics()
+                            .environmentObject(marketVM)
                         
-                        GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "All Coins", order: .topCap)
-                        GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "Top Gainers", order: .gainers)
-                        GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "Top Losers", order: .losers)
+                        List{
+                            
+                            GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "All Coins", order: .topCap)
+                            GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "Top Gainers", order: .gainers)
+                            GroupedCoins(selectedCoin: $selectedCoin, showDetails: $showDetails, text: "Top Losers", order: .losers)
+                        }
+                        .refreshable {
+                            marketVM.reloadData()
+                        }
+                        .listStyle(.insetGrouped)
                     }
-                    .refreshable {
-                        marketVM.reloadData()
-                    }
-                    .listStyle(.insetGrouped)
                 }
                 .navigationTitle("Markets")
-                .background(Color.custom.secondaryBackground)
             }
             .sheet(isPresented: $marketVM.showCoins) {
                 CoinsView()

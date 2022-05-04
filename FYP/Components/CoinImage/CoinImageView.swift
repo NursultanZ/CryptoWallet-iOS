@@ -1,10 +1,3 @@
-//
-//  CoinImageView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 4/4/2022.
-//
-
 import SwiftUI
 
 struct CoinImageView: View {

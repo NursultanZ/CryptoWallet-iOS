@@ -1,30 +1,48 @@
 {
   "pins" : [
     {
-      "identity" : "asn1",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leif-ibsen/ASN1",
-      "state" : {
-        "revision" : "21499128ce5f58a73f0ff83c9a1174578cde4723",
-        "version" : "2.0.1"
-      }
-    },
-    {
       "identity" : "bigint",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leif-ibsen/BigInt",
+      "location" : "https://github.com/attaswift/BigInt.git",
       "state" : {
-        "revision" : "3ff261ecd694009513cd0a260fc03723cc61d32e",
-        "version" : "1.2.12"
+        "revision" : "0ed110f7555c34ff468e72e1686e59721f2b0da6",
+        "version" : "5.3.0"
       }
     },
     {
-      "identity" : "swiftecc",
+      "identity" : "cryptoswift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/leif-ibsen/SwiftECC",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
       "state" : {
-        "revision" : "e0ce0bfcb380a4a8bb8a06057867a4ee3cabbf35",
-        "version" : "2.2.0"
+        "revision" : "12f2389aca4a07e0dd54c86ec23d0721ed88b8db",
+        "version" : "1.4.3"
+      }
+    },
+    {
+      "identity" : "promisekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/PromiseKit.git",
+      "state" : {
+        "revision" : "3fd8c77ded8a4bbee548e3bd6c987ffe8c1e3574",
+        "version" : "6.17.0"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "web3swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/skywinder/web3swift",
+      "state" : {
+        "revision" : "e7c98db72d27833fcf910ec37d2aa827c3b556e8",
+        "version" : "2.6.3"
       }
     }
   ],

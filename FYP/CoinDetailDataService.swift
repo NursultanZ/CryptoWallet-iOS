@@ -1,10 +1,3 @@
-//
-//  CoinDetailDataService.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 12/4/2022.
-//
-
 import Foundation
 import Combine
 

@@ -1,10 +1,3 @@
-//
-//  CoinsListHeaderView.swift
-//  FYP
-//
-//  Created by Nursultan Zakirov on 10/4/2022.
-//
-
 import SwiftUI
 
 struct CoinsListHeaderView: View {
